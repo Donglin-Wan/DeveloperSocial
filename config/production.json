@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://DonglinWan:88888888>@devconnector.l2lxp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken",
+  "githubClientId": "ac74581ccdc0276637b6",
+  "githubSecret": "9d3977f2e2b656fe80d9c528a92d59614101ed14"
+}
