@@ -17,7 +17,9 @@ module.exports = (req, res, next) => {
          * "user": {
          *     "id": xxx
          * }} */
-        const decoded = jwt.verify(token, config.get('jwtSecret'))
+        // const decoded = jwt.verify(token, config.get('jwtSecret'))
+        const decoded = jwt.verify(token, process.env.JWTSECRET)
+
         //assign payload defined by jwt.sign in routes/users from returned jwt to req.user
         req.user = decoded.user
         next()
